@@ -1,12 +1,4 @@
-// Set current date for "Last Updated"
 document.addEventListener('DOMContentLoaded', function() {
-    const lastUpdatedElement = document.getElementById('lastUpdated');
-    if (lastUpdatedElement) {
-        const now = new Date();
-        const options = { year: 'numeric', month: 'long', day: 'numeric' };
-        lastUpdatedElement.textContent = now.toLocaleDateString('en-US', options);
-    }
-    
     // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
